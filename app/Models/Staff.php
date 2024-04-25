@@ -16,4 +16,5 @@ class Staff extends Model
     protected $fillable = ['id', 'nip', 'email', 'nama', 'tanggal_lahir', 'no_hp'];
 
     public $timestamps = false;
+
 }
