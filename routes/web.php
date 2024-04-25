@@ -27,3 +27,5 @@ Route::get('/mahasiswa/create', [MahasiswaController::class, 'create'])->name('c
 Route::get('/dosen', [DosenController::class, 'index2']);
 Route::get('/dosen2', [Dosen2Controller::class, 'index3']);
 Route::post('/mahasiswa/store', [MahasiswaController::class, 'store'])->name('store');
+Route::get('/mahasiswa/edit/{id_mahasiswa}', [MahasiswaController::class, 'edit'])->name('edit');
+Route::put('/mahasiswa/update/{id_mahasiswa}', [MahasiswaController::class, 'update'])->name('update');
